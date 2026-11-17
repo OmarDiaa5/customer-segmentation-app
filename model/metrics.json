@@ -1,0 +1,93 @@
+{
+  "selected_model": "K-Means",
+  "n_segments": 4,
+  "selection_rule": "best silhouette among models that can score new customers, K chosen in 4-6",
+  "sklearn_version": "1.7.2",
+  "clean_info": {
+    "rows_raw": 541909,
+    "missing_customer_id": 135080,
+    "cancellations": 8905,
+    "non_positive_qty_or_price": 40,
+    "non_product_lines": 1547,
+    "duplicates": 5187,
+    "rows_clean": 391150
+  },
+  "customers": 4334,
+  "snapshot_date": "2011-12-10",
+  "results": [
+    {
+      "model": "K-Means",
+      "silhouette": 0.3381,
+      "davies_bouldin": 1.0131,
+      "calinski_harabasz": 3329.6842,
+      "smallest_segment_pct": 0.1583,
+      "can_score_new_customers": true
+    },
+    {
+      "model": "Gaussian Mixture",
+      "silhouette": 0.1752,
+      "davies_bouldin": 1.7082,
+      "calinski_harabasz": 2167.7132,
+      "smallest_segment_pct": 0.1917,
+      "can_score_new_customers": true
+    },
+    {
+      "model": "Agglomerative (Ward)",
+      "silhouette": 0.2428,
+      "davies_bouldin": 1.2255,
+      "calinski_harabasz": 2780.0958,
+      "smallest_segment_pct": 0.1461,
+      "can_score_new_customers": false
+    }
+  ],
+  "k_scan": [
+    {
+      "k": 2,
+      "inertia": 6476.6252,
+      "silhouette": 0.433,
+      "davies_bouldin": 0.8917
+    },
+    {
+      "k": 3,
+      "inertia": 4861.422,
+      "silhouette": 0.3375,
+      "davies_bouldin": 1.0462
+    },
+    {
+      "k": 4,
+      "inertia": 3931.7646,
+      "silhouette": 0.3381,
+      "davies_bouldin": 1.0131
+    },
+    {
+      "k": 5,
+      "inertia": 3290.1213,
+      "silhouette": 0.3172,
+      "davies_bouldin": 0.9851
+    },
+    {
+      "k": 6,
+      "inertia": 2849.8276,
+      "silhouette": 0.3141,
+      "davies_bouldin": 1.0106
+    },
+    {
+      "k": 7,
+      "inertia": 2546.9294,
+      "silhouette": 0.3095,
+      "davies_bouldin": 0.9692
+    },
+    {
+      "k": 8,
+      "inertia": 2334.2523,
+      "silhouette": 0.3012,
+      "davies_bouldin": 0.9944
+    }
+  ],
+  "segment_names": {
+    "0": "Champions",
+    "1": "Lost / Inactive",
+    "2": "At Risk",
+    "3": "New / Promising"
+  }
+}

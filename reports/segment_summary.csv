@@ -1,0 +1,5 @@
+Segment,customers,median_recency_days,median_orders,median_spend,total_revenue,customers_pct,revenue_pct,action
+Champions,686,8.0,10.0,3728.76,5603729.81,0.158,0.641,"Reward them: VIP perks, early access to new products, ask for reviews and referrals."
+At Risk,1177,52.0,4.0,1356.33,2115806.44,0.272,0.242,"Win-back campaign now: personal email, time-limited offer, ask what went wrong."
+New / Promising,835,17.0,2.0,460.64,444977.54,0.193,0.051,"Onboarding emails, a second-purchase discount, show best-sellers."
+Lost / Inactive,1636,176.5,1.0,298.44,572713.85,0.377,0.066,"Low-cost reactivation (newsletter, big seasonal sale); do not overspend."
